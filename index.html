@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorilla Gym - غوريلا جيم | منفلوط</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0b0b0b;
+            color: #f3f4f6;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-color {
+            color: #ff5722;
+        }
+        .accent-bg {
+            background-color: #ff5722;
+        }
+        .accent-border {
+            border-color: #ff5722;
+        }
+        .card-bg {
+            background-color: #161616;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-100">
+
+    <!-- شريط الإعلانات العلوي -->
+    <div class="bg-orange-600 text-white text-xs py-2 px-4 text-center font-bold tracking-wide">
+        🔥 أقوى صالة ألعاب رياضية في منفلوط - انضم الآن لعائلة غوريلا جيم!
+    </div>
+
+    <!-- شريط التنقل (Navbar) -->
+    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-orange-600/30">
+                        G
+                    </div>
+                    <div>
+                        <span class="text-xl font-black tracking-wider block text-white">GORILLA GYM</span>
+                        <span class="text-xs text-orange-500 font-semibold">غوريلا جيم - منفلوط</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 space-x-reverse font-semibold">
+                    <a href="#about" class="hover:text-orange-500 transition">عن الجيم</a>
+                    <a href="#services" class="hover:text-orange-500 transition">الخدمات</a>
+                    <a href="#calculator" class="hover:text-orange-500 transition">حاسبة اللياقة</a>
+                    <a href="#pricing" class="hover:text-orange-500 transition">الاشتراكات</a>
+                    <a href="#location" class="hover:text-orange-500 transition">الموقع والاتصال</a>
+                </div>
+                <div>
+                    <a href="tel:01035334247" class="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2.5 rounded-xl font-bold transition flex items-center space-x-2 space-x-reverse shadow-lg shadow-orange-600/20">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>اتصل الآن</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <header class="hero-bg min-h-[85vh] flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <div class="inline-block bg-orange-600/20 border border-orange-500 text-orange-400 text-sm font-bold px-4 py-1.5 rounded-full mb-2">
+                ⭐⭐⭐⭐⭐ تقييم ممتاز 5.0 من المتدربين
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white leading-tight">
+                ابنِ جسمك، وطور قوتك في <span class="text-orange-500">Gorilla Gym</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-medium">
+                أحدث الأجهزة الرياضية، بيئة حماسية، ومتابعة احترافية لتصل لهدفك الرياضي بكل قوة وثقة.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a href="#pricing" class="bg-orange-600 hover:bg-orange-700 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-orange-600/30 transition transform hover:-translate-y-0.5">
+                    شاهد خطط الاشتراكات
+                </a>
+                <a href="https://wa.me/201035334247" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 text-white font-bold px-8 py-4 rounded-xl text-lg border border-zinc-700 transition flex items-center justify-center space-x-2 space-x-reverse">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i>
+                    <span>تواصل عبر الواتساب</span>
+                </a>
+            </div>
+
+            <!-- معلومات سريعة -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-12 text-right">
+                <div class="card-bg p-4 rounded-xl border border-zinc-800 flex items-center space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 bg-orange-600/10 text-orange-500 rounded-lg flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-gray-400 font-bold">العنوان</h4>
+                        <p class="text-sm font-bold text-white">أسفل سوبر ماركت خير زمان، منفلوط، أسيوط</p>
+                    </div>
+                </div>
+                <div class="card-bg p-4 rounded-xl border border-zinc-800 flex items-center space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 bg-orange-600/10 text-orange-500 rounded-lg flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-gray-400 font-bold">مواعيد العمل</h4>
+                        <p class="text-sm font-bold text-white">يومياً من الساعة 10:00 صباحاً</p>
+                    </div>
+                </div>
+                <div class="card-bg p-4 rounded-xl border border-zinc-800 flex items-center space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 bg-orange-600/10 text-orange-500 rounded-lg flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-gray-400 font-bold">رقم الهاتف</h4>
+                        <p class="text-sm font-bold text-white" dir="ltr">010 35334247</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم عن الجيم -->
+    <section id="about" class="py-20 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-orange-500 font-bold tracking-widest text-sm uppercase">من نحن</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-white">وجهتك الأولى لصناعة القوة واللياقة البدنية في منفلوط</h2>
+                    <p class="text-gray-400 leading-relaxed font-medium">
+                        في **Gorilla Gym**، نحن لا نؤمن فقط برفع الأوزان، بل نؤمن ببناء مجتمع رياضي قوي وصحي. نوفر لك بيئة تحفيزية، وأجهزة حديثة متكاملة لمختلف تمارين الحديد، الكارديو، وبناء الأجسام لتصل لهدفك مهما كان.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="border-r-2 border-orange-600 pr-4">
+                            <h3 class="text-2xl font-black text-white">100%</h3>
+                            <p class="text-sm text-gray-400">أجهزة حديثة ومتطورة</p>
+                        </div>
+                        <div class="border-r-2 border-orange-600 pr-4">
+                            <h3 class="text-2xl font-black text-white">5.0</h3>
+                            <p class="text-sm text-gray-400">تقييم العملاء على جوجل</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Gym" class="rounded-2xl shadow-xl object-cover h-64 w-full border border-zinc-800">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Weights" class="rounded-2xl shadow-xl object-cover h-64 w-full border border-zinc-800 mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- حاسبة مؤشر كتلة الجسم BMI التفاعلية -->
+    <section id="calculator" class="py-20 bg-zinc-900 border-y border-zinc-800">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center space-y-3 mb-10">
+                <span class="text-orange-500 font-bold text-sm uppercase">أدوات ذكية</span>
+                <h2 class="text-3xl font-black text-white">حاسبة مؤشر كتلة الجسم (BMI)</h2>
+                <p class="text-gray-400">عرف وزنك المثالي واعرف حالتك البدنية الحالية بدقة</p>
+            </div>
+            
+            <div class="card-bg p-8 rounded-2xl border border-zinc-800 shadow-2xl space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">الوزن (كجم)</label>
+                        <input type="number" id="weight" placeholder="مثال: 75" class="w-full bg-zinc-950 border border-zinc-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">الطول (سم)</label>
+                        <input type="number" id="height" placeholder="مثال: 175" class="w-full bg-zinc-950 border border-zinc-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500">
+                    </div>
+                </div>
+                <button onclick="calculateBMI()" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-orange-600/30">
+                    احسب النتيجة الآن
+                </button>
+                <div id="bmiResult" class="hidden text-center p-4 bg-zinc-950 rounded-xl border border-zinc-800">
+                    <h3 class="text-lg font-bold text-white mb-1">النتيجة: <span id="bmiValue" class="text-orange-500"></span></h3>
+                    <p id="bmiText" class="text-sm text-gray-400"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خطط الاشتراكات -->
+    <section id="pricing" class="py-20 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-16">
+                <span class="text-orange-500 font-bold text-sm uppercase">باقات العضوية</span>
+                <h2 class="text-3xl md:text-4xl font-black text-white">اختر خطة الاشتراك المناسبة لك</h2>
+                <p class="text-gray-400">انضم اليوم وابدأ رحلة التغيير مع أفضل المدربين</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- اشتراك شهر -->
+                <div class="card-bg p-8 rounded-2xl border border-zinc-800 flex flex-col justify-between hover:border-orange-500 transition">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">الاشتراك الشهري</h3>
+                        <p class="text-gray-400 text-sm mb-6">مناسب لمن يبدأ التجربة ويريد مرونة قصيرة المدى.</p>
+                        <div class="text-3xl font-black text-orange-500 mb-6">حسب الطلب<span class="text-xs text-gray-400 block font-normal">استفسر عن السعر الحالي</span></div>
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>دخول كامل لكل الأجهزة</span></li>
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>استخدام منطقة الكارديو</span></li>
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>متابعة عامة</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201035334247?text=مرحباً، أهتم بالاستفسار عن اشتراك الشهر في Gorilla Gym" target="_blank" class="w-full bg-zinc-900 hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition text-center border border-zinc-700 hover:border-orange-600">
+                        احجز عبر الواتساب
+                    </a>
+                </div>
+
+                <!-- اشتراك 3 أشهر (الأكثر طلباً) -->
+                <div class="card-bg p-8 rounded-2xl border-2 border-orange-500 flex flex-col justify-between relative shadow-xl shadow-orange-600/10">
+                    <div class="absolute -top-3 right-8 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        الأكثر طلباً ⭐
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">باقة 3 أشهر</h3>
+                        <p class="text-gray-400 text-sm mb-6">الأفضل لتحقيق نتائج حقيقية وملموسة في جسمك.</p>
+                        <div class="text-3xl font-black text-orange-500 mb-6">عروض خاصة<span class="text-xs text-gray-400 block font-normal">خصم ممتاز عند الاشتراك</span></div>
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>دخول كامل غير محدود للأجهزة</span></li>
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>برنامج تدريبي مخصص</span></li>
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>متابعة وتوجيه مباشر</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201035334247?text=مرحباً، أهتم بالاستفسار عن باقة 3 أشهر في Gorilla Gym" target="_blank" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl transition text-center shadow-lg shadow-orange-600/30">
+                        احجز عبر الواتساب
+                    </a>
+                </div>
+
+                <!-- اشتراك سنوي -->
+                <div class="card-bg p-8 rounded-2xl border border-zinc-800 flex flex-col justify-between hover:border-orange-500 transition">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">الباقة السنوية (VIP)</h3>
+                        <p class="text-gray-400 text-sm mb-6">للالتزام الكامل والوصول لأعلى مستوى لياقة بأفضل سعر.</p>
+                        <div class="text-3xl font-black text-orange-500 mb-6">توفير عالي<span class="text-xs text-gray-400 block font-normal">أفضل قيمة مقابل سعر</span></div>
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>عضوية كاملة لمدة سنة</span></li>
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>برامج تغذية وتدريب متكاملة</span></li>
+                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-orange-500"></i><span>أولوية حجز وحضور الحصص</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201035334247?text=مرحباً، أهتم بالاستفسار عن الباقة السنوية في Gorilla Gym" target="_blank" class="w-full bg-zinc-900 hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition text-center border border-zinc-700 hover:border-orange-600">
+                        احجز عبر الواتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الموقع ومعلومات التواصل -->
+    <section id="location" class="py-20 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-orange-500 font-bold text-sm uppercase">تواصل معنا</span>
+                    <h2 class="text-3xl font-black text-white">زورنا في الجيم اليوم!</h2>
+                    <p class="text-gray-400">يسعدنا استقبالكم وزيارتكم لمعاينة الأجهزة والمكان بأنفسكم.</p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="w-10 h-10 bg-orange-600/10 text-orange-500 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">العنوان بالتفصيل</h4>
+                                <p class="text-gray-400 text-sm">أسفل سوبر ماركت خير زمان، منفلوط، محافظة أسيوط 71511</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="w-10 h-10 bg-orange-600/10 text-orange-500 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">رقم الهاتف</h4>
+                                <p class="text-gray-400 text-sm" dir="ltr">010 35334247</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="w-10 h-10 bg-orange-600/10 text-orange-500 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Plus Code (خرائط جوجل)</h4>
+                                <p class="text-gray-400 text-sm">8X67+38 Manfalut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bg p-4 rounded-2xl border border-zinc-800">
+                    <div class="w-full h-80 bg-zinc-950 rounded-xl flex flex-col items-center justify-center p-6 text-center border border-zinc-800">
+                        <i class="fa-solid fa-map-location-dot text-5xl text-orange-500 mb-4"></i>
+                        <h3 class="text-lg font-bold text-white mb-2">Gorilla Gym - منفلوط</h3>
+                        <p class="text-sm text-gray-400 mb-6">أسفل سوبر ماركت خير زمان</p>
+                        <a href="https://maps.google.com/?q=Manfalut,+Assiut+Governorate" target="_blank" class="bg-orange-600 hover:bg-orange-700 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition">
+                            افتح الموقع على خرائط جوجل
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-black border-t border-zinc-900 py-8 text-center text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <p class="font-bold text-gray-300">Gorilla Gym - غوريلا جيم © 2026. جميع الحقوق محفوظة.</p>
+            <p>منفلوط، محافظة أسيوط، مصر.</p>
+        </div>
+    </footer>
+
+    <!-- أزرار التواصل العائمة -->
+    <div class="fixed bottom-6 left-6 z-50">
+        <a href="https://wa.me/201035334247" target="_blank" class="w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- كود جافاسكريبت لحاسبة الـ BMI -->
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value) / 100;
+            const resultDiv = document.getElementById('bmiResult');
+            const bmiValue = document.getElementById('bmiValue');
+            const bmiText = document.getElementById('bmiText');
+
+            if (!weight || !height || weight <= 0 || height <= 0) {
+                alert('الرجاء إدخال الوزن والطول بشكل صحيح.');
+                return;
+            }
+
+            const bmi = (weight / (height * height)).toFixed(1);
+            resultDiv.classList.remove('hidden');
+            bmiValue.textContent = bmi;
+
+            let message = "";
+            if (bmi < 18.5) {
+                message = "وزن منخفض (تحتاج لبرنامج تضخيم وزيادة السعرات الحرارية في الجيم).";
+            } else if (bmi >= 18.5 && bmi < 25) {
+                message = "وزن مثالي ورائع! استمر في المحافظة والتدريب.";
+            } else if (bmi >= 25 && bmi < 30) {
+                message = "زيادة طفيفة في الوزن (تحتاج لبرنامج كارديو وحرق دهون).";
+            } else {
+                message = "وزن زائد (ننصحك بالانتظام معنا في برامج التخسيس والكارديو المكثفة).";
+            }
+            bmiText.textContent = message;
+        }
+    </script>
+</body>
+</html>
